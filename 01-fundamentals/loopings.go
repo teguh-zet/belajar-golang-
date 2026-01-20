@@ -4,8 +4,8 @@ import (
 	"fmt"
 )
 
-func GoLooping() {
-	// hanya dengan satu kondisi	
+func RunLooping() {
+	// hanya dengan satu kondisi
 	i := 3
 	for i <= 3 {
 		fmt.Println(i)
@@ -13,18 +13,18 @@ func GoLooping() {
 	}
 	// biasa
 
-	for j:=0; j<3; j++{
+	for j := 0; j < 3; j++ {
 		fmt.Print(j)
-		if j!=2 {
+		if j != 2 {
 			fmt.Print("-")
 		}
 	}
 	println()
 
 	//with func range ket = range bisa auto increment variable
-	 for i := range 3 {
-        fmt.Println("range", i)
-    }
+	for i := range 3 {
+		fmt.Println("range", i)
+	}
 
 	// bisa tanpa syarat tetapi akan terus berulang tanpa henti
 	for {
@@ -33,13 +33,12 @@ func GoLooping() {
 		break
 	}
 
-	for n :=  range 6{
+	for n := range 6 {
 		//untuk skip bilangan genp
-		if n % 2 == 0{
+		if n%2 == 0 {
 			continue
 		}
 		fmt.Println(n)
 	}
-
 
 }

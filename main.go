@@ -6,41 +6,69 @@ import (
 	functions "first-go/03-functions"
 	types "first-go/04-types"
 	errorhandling "first-go/05-error-handling"
+	concurrency "first-go/06-concurrency"
+	system "first-go/07-systems"
 )
 
 func main() {
 	i := 1
 	if i == 1 {
-		errorhandling.GoErrorHandling()
-		} else {
+		system.RunJSONExample()
+	} else {
+		//system
+		system.RunFileExample()
+		//06-concurrency
+		concurrency.RunWaitGroup()
+		concurrency.RunWorkerPool()
+		concurrency.RunTickers()
+		concurrency.RunTimers()
+		concurrency.RunRangeOverChannel()
+		concurrency.RunClosingChannel()
+		concurrency.RunTimeouts()
+		concurrency.RunChannelNonBlocking()
+		
+		concurrency.RunSelect()
+		concurrency.RunChannelDirection()
+		concurrency.RunChannelSynchronization()
+		concurrency.RunChannelBuffered()
+		concurrency.RunChannels()
+		concurrency.RunRoutine()
+		//05-error-handling
+		errorhandling.RunRecoverExample()
+		errorhandling.RunDeferExample()
+		errorhandling.RunPanicExample()
+		errorhandling.RunCostumeError()
+		errorhandling.RunErrorHandling()
 		//04-types
-		types.GoRangeIterators()
-		types.GoGenerics()
-		types.GoEmbedding()
-		types.GoEnums()
-		types.GoInterface()
-		types.GoMethod()
-		types.GoPointer()
-		types.GoStruct()
+		types.RunRangeIterators()
+		types.RunGenerics()
+		types.RunEmbedding()
+		types.RunEnums()
+		types.RunInterface()
+		types.RunMethod()
+		types.RunPointer()
+		types.RunStruct()
 		//03-functions
-		functions.GoFunctions()
-		functions.GoClosureFunctions()
-		functions.GoMultipleReturn()
-		functions.GoVaradicFuntions()
-		functions.GoRecursiveFunctions()
+		functions.RunFunctions()
+		functions.RunClosureFunctions()
+		functions.RunMultipleReturn()
+		functions.RunVaradicFuntions()
+		functions.RunRecursiveFunctions()
 		//02-collections
-		collections.GoArray()	
-		collections.GoSlices()	
-		collections.GoMaps()	
-		collections.GoRange()	
+		collections.RunSortFuncExample()
+		collections.RunSortingExample()
+		collections.RunArray()
+		collections.RunSlices()
+		collections.RunMaps()
+		collections.RunRange()
 		//01-fundamental
-		fundamentals.GoString()
-		fundamentals.GoSwitch()
-		fundamentals.GoIfelse()
-		fundamentals.GoLooping()
-		fundamentals.GoVariables()	
-		fundamentals.GoConstants()
-		fundamentals.GoValues()
+		fundamentals.RunString()
+		fundamentals.RunSwitch()
+		fundamentals.RunIfelse()
+		fundamentals.RunLooping()
+		fundamentals.RunVariables()
+		fundamentals.RunConstants()
+		fundamentals.RunValues()
 	}
 
 }

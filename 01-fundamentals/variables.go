@@ -2,13 +2,13 @@ package fundamentals
 
 import "fmt"
 
-func GoVariables() {
+func RunVariables() {
 	var a = "umur"
 	var b, c = "teguh", 21
-	fmt.Println(a,b,c)
+	fmt.Println(a, b, c)
 
-	var d  =true
+	var d = true
 	fmt.Println(d)
 	var o int
-	fmt.Println(o,"  <--- apa bila variable int tidak diisi dan ditampilkan nilainya akan otomatis akan nol bukan null") 
+	fmt.Println(o, "  <--- apa bila variable int tidak diisi dan ditampilkan nilainya akan otomatis akan nol bukan null")
 }
