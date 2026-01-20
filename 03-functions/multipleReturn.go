@@ -3,8 +3,8 @@ package functions
 import "fmt"
 
 // <-- jumlah nilai pembaliknya ditentikan oleh jumlah
-// variable dalam argument kedua
-//sedang kan argumen pertama untuk menangkap parameter pemanggil
+// variable dalam argumen kedua
+//sedang kan argumen pertama untuk menangkap argumen pemanggil
 func values()(int,int,int){ 
 	return 3,4,5
 }

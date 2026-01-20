@@ -1,10 +1,10 @@
-package looping
+package fundamentals
 
 import (
 	"fmt"
 )
 
-func GoFor() {
+func GoLooping() {
 	// hanya dengan satu kondisi	
 	i := 3
 	for i <= 3 {

@@ -1,4 +1,4 @@
-package arrays
+package collections
 
 import "fmt"
 
