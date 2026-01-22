@@ -19,10 +19,14 @@ func RunSlices() {
 	fmt.Println("get:", s[2])
 	//
 	fmt.Println("len = ", len(s))
+	//delete slice
+
 
 	// fungsi append akan menambah data yang akan diletak diindeks paling belakang tidak peduli data itu ksong atau tidak
 	s = append(s, "d")
 	s = append(s, "e", "f")
+	// slice.delete yang dapat menghapus dengan rentang index
+	s = slices.Delete(s,1,3)
 	fmt.Println("apd:", s)
 	//hasil nya akan berubah dikarenakan telah menambah d e f
 	fmt.Println("len = ", len(s))

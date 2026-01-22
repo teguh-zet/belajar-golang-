@@ -17,10 +17,10 @@ func RunRoutine() {
 
 	//hasilnya tergantung yang pertama selesai
 	go f("goroutine")
-
-	go func(msg string, dd int) {
+	
+	go func(msg string) {
 		fmt.Println(msg)
-	}("asdasdasdasdadasdasdasdadsadasdas", 2)
+	}("asdasdasdasdadasdasdasdadsadasdas")
 
 	go func(msg string) {
 		fmt.Println(msg)

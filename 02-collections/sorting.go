@@ -2,7 +2,7 @@ package collections // Sesuaikan nama package dengan file lain di folder 02
 
 import (
 	"fmt"
-	"slices" // Package baru di Run 1.21+
+	"slices"
 )
 
 // Ganti nama func main() menjadi nama yang deskriptif & Public

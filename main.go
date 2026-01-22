@@ -13,9 +13,11 @@ import (
 func main() {
 	i := 1
 	if i == 1 {
-		system.RunJSONExample()
-	} else {
-		//system
+		collections.RunSlices()
+		// concurrency.RunRoutine()
+		} else {
+			//system
+			system.RunJSONExample()
 		system.RunFileExample()
 		//06-concurrency
 		concurrency.RunWaitGroup()
@@ -32,7 +34,6 @@ func main() {
 		concurrency.RunChannelSynchronization()
 		concurrency.RunChannelBuffered()
 		concurrency.RunChannels()
-		concurrency.RunRoutine()
 		//05-error-handling
 		errorhandling.RunRecoverExample()
 		errorhandling.RunDeferExample()
